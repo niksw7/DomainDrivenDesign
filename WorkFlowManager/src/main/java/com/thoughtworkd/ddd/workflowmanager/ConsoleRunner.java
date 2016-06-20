@@ -45,14 +45,22 @@ public class ConsoleRunner implements CommandLineRunner {
                     break;
                 case "3":
                     maintainanceTask();
-
                     break;
+                case "4":
+                    accountId = bufferedReader.readLine();
+                    String accountNumber = bufferedReader.readLine();
+                    registerExternalAccount(accountId, accountNumber);
                 case "5":
                     return;
             }
         }
 
     }
+
+    private void registerExternalAccount(String accountId, String accountNumber) {
+        accountService.registerTransferAccount(accountId,accountNumber);
+    }
+
 
     private boolean maintainanceTask() {
         //customerService.

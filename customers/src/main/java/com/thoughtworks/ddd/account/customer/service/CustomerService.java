@@ -15,7 +15,6 @@ public class CustomerService {
     public void createCustomer(String id, String aadhar, String firstName, String lastName, Address address, int creditScore) throws LowCreditScoreException {
         customerRepository.save(new Customer(id, aadhar,  firstName,  lastName,  address, creditScore));
     }
-    public void deleteOlder(String id, String aadhar, String firstName, String lastName, Address address, int creditScore) throws LowCreditScoreException {
-        customerRepository.save(new Customer(id, aadhar,  firstName,  lastName,  address, creditScore));
-    }
+    public void deleteOlder(String id)
+    {}
 }
