@@ -11,11 +11,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AccountService {
-    @Autowired
     private AccountRepository accountRepository;
 
-    public void createAccount(String id,String customerId){
-        accountRepository.save(new Account(id,customerId));
+    @Autowired
+    public AccountService(AccountRepository accountRepository) {
+        this.accountRepository = accountRepository;
+    }
+
+    public void createAccount(String id, String customerId) {
+        accountRepository.save(new Account(id, customerId));
     }
 
     public void registerTransferAccount(String accountId, String accountNumber) {

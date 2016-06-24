@@ -1,4 +1,4 @@
-package com.thoughtworkd.ddd.workflowmanager;
+package com.thoughtworks.ddd.workflowmanager;
 
 import java.util.UUID;
 

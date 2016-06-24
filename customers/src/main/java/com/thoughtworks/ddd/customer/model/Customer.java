@@ -1,7 +1,7 @@
-package com.thoughtworks.ddd.account.customer.model;
+package com.thoughtworks.ddd.customer.model;
 
-import com.thoughtworks.ddd.account.customer.exceptions.LowCreditScoreException;
-import com.thoughtworks.ddd.account.customer.vo.Address;
+import com.thoughtworks.ddd.customer.exceptions.LowCreditScoreException;
+import com.thoughtworks.ddd.customer.vo.Address;
 
 /**
  * Created by nikeshs on 10/06/16.

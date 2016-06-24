@@ -1,4 +1,4 @@
-package com.thoughtworks.ddd.account.customer.exceptions;
+package com.thoughtworks.ddd.customer.exceptions;
 
 /**
  * Created by nikeshs on 10/06/16.

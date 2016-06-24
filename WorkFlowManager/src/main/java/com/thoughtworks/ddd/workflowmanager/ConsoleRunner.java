@@ -1,7 +1,7 @@
-package com.thoughtworkd.ddd.workflowmanager;
+package com.thoughtworks.ddd.workflowmanager;
 
-import com.thoughtworks.ddd.account.customer.service.CustomerService;
-import com.thoughtworks.ddd.account.customer.vo.Address;
+import com.thoughtworks.ddd.customer.service.CustomerService;
+import com.thoughtworks.ddd.customer.vo.Address;
 import com.thoughtworks.ddd.account.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -24,8 +24,9 @@ public class ConsoleRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         System.out.println("hello i am command runner");
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        String input = bufferedReader.readLine();
+        String input ;
         while(true) {
+            input = bufferedReader.readLine();
             switch (input) {
                 case "1":
                     String accountId = IdGenerator.accountId();

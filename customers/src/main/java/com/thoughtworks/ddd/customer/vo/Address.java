@@ -1,4 +1,4 @@
-package com.thoughtworks.ddd.account.customer.vo;
+package com.thoughtworks.ddd.customer.vo;
 
 /**
  * Created by nikeshs on 10/06/16.
